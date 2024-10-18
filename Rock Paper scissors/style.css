@@ -1,0 +1,188 @@
+body{
+    
+    font-family: 'Fredoka One', cursive;
+    height: 100vh;
+    text-align: center;
+    background-color:#a09e9e;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 45px;
+}
+
+.computer ,.player{
+    width: 45%;
+}
+    
+.buttons{
+    width: 280px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bn{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 3px solid #34495e;
+    border-radius: 50%;
+    color: #34495e;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: .2s all linear;
+}
+
+.bn:hover{
+    background-color: #34495e;
+    border-color: white;
+    color: white;
+}
+
+
+.intro{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(246, 246, 248);
+    margin-top: 30px;
+}
+.gameBox{
+
+    border-radius: 1000px;
+    background: linear-gradient(145deg, #c6cec6, #686666);
+    
+color: white;
+text-align: center;
+width: 500px;
+height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+margin: 20px 20px 0px 20px;
+
+}
+
+.gameBox i{
+    font-size: 70px;
+   
+}
+
+.result{
+    margin-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result h2{
+    
+    color:white;
+    border-radius: 14px;
+background: linear-gradient(145deg, #0e0e0e, #0c0c0c);
+box-shadow:  5px 5px 8px #3d3c3c, 
+             -5px -5px 8px #3d3c3c;
+    padding: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.selection{
+    padding-top: 0px;
+}
+
+.options{
+    justify-content: space-evenly;
+}
+
+.score{
+    font-size: 0px;
+}
+
+.gameChanger{
+   
+    font-size: 30px;
+    background-color: white;
+    
+    color: black;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.gameResult{
+    font-size:30px ;
+}
+
+.computerOpt{
+    color:blue;
+}
+
+
+.playerOpt{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:720px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 16px 32px;
+        text-align:center;
+        
+    }
+
+    body{
+        background: none;
+        height: 100vh;
+    }
+    .gameBox i{
+        font-size: 70px;
+       
+    }
+
+    .result h2{
+        font-size: 10px;
+    }
+
+    .gameBox{
+        width: 250px;
+        height: 250px;
+        font-size: 10px;
+    }
+
+    .gameChanger{
+        
+        font-size: 18px;
+        
+        
+    }
+
+    .intro{
+        font-size: 10px;
+        font-weight: 60;
+        color: rgb(189, 94, 94);
+        margin-top: 10px;
+    }
+
+}
